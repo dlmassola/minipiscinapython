@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table{
+                border: 1px solid red;
+                border-collapse: collapse;
+                width: 100%;
+
+            }
+        </style>
+        <title>Meu Currículo</title>
+    </head>
+    <body>
+        <center>
+            <h1><font size="7">Turing</font>, <font size="6">Alan</font></h1>
+        </center>
+        <br><br><br>
+        <table>
+            <th>
+                <td>Tenho como objetivo atuar com decriptografia de mensagens secretas com cifras de alta complexidade.</td>
+            </th>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td colspan="2">Formação Acadêmica</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ol>
+                        <li>Hazlehurst Preparatory School</li>
+                        <li>King’s College de Cambridge</li>
+                        <li>Universidade de Princeton</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Habilidades e Competências</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>Matemático</li>
+                        <li>Criptógrafo</li>
+                        <li>Cientista</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Experiência Profissional</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>Marinha Britânica</li>
+                        <ul>
+                            <li>Criptógrafo</li>
+                            <li>Chefe dos Criptógrafos</li>
+                        </ul>
+                        <li>Escola de Código do Governo</li>
+                        <ul>
+                            <li>Professor</li>
+                            <li>Diretor</li>
+                        </ul>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td width="14%" align="right" style="border: 1px solid #424242;">
+                    <div><output id="data"></output>&nbsp;<output id="hora"></output></div>
+                </td>
+            </tr>
+        </table>
+    </body>
+    <script>
+
+			var momentoAtual = new Date();
+			
+			var vhora = momentoAtual.getHours();
+			var vminuto = momentoAtual.getMinutes();
+			var vsegundo = momentoAtual.getSeconds();
+			
+			var vdia = momentoAtual.getDate();
+			var vmes = momentoAtual.getMonth() + 1;
+			var vano = momentoAtual.getFullYear();
+			
+			if (vdia < 10){ vdia = "0" + vdia;}
+			if (vmes < 10){ vmes = "0" + vmes;}
+			if (vhora < 10){ vhora = "0" + vhora;}
+			if (vminuto < 10){ vminuto = "0" + vminuto;}
+			if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+
+			dataFormat = vdia + " / " + vmes + " / " + vano;
+			horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+
+			document.getElementById("data").innerHTML = dataFormat;
+			document.getElementById("hora").innerHTML = horaFormat;
+	</script>	
+</html>

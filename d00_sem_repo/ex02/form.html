@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="popup.js"></script>
+        <title>Exercise 02</title>
+    </head>
+    <body>
+        <form id="contato">
+            Firstname:<input type="text" id="firstname">
+            <br>
+            Name:<input type="text" id="name">
+            <br>
+            Age:<br><input type="number" id="age">
+            <br>
+            Phone:<br><input type="tel" id="phone">
+            <br>
+            Email:<br><input type="email" id="email">
+            <br>
+            Student at 42?<input type="checkbox" id="student">
+            <br>
+            Gender:<br>
+            <input type="radio" id="gender_male" name="gender" value="Male" checked>Male<br>
+            <input type="radio" id="gender_female" name="gender" value="Female">Female<br>
+            <input type="radio" id="gender_other" name="gender" value="Other">Others<br>
+            <br>
+            <input type="button" value="Send" onclick="displayFormContents()">
+        </form>
+    </body>
+</html>

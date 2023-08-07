@@ -1,0 +1,1 @@
+curl $1 --silent | grep "http" | cut -d"\"" -f2
