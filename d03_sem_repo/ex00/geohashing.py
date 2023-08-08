@@ -2,7 +2,7 @@
 import sys, antigravity
 
 def calcGeoHash():
-    antigravity.geohash(float(sys.argv[1]), float(sys.argv[2]), str(sys.argv[2]).encode('utf-8'))
+    antigravity.geohash(float(sys.argv[1]), float(sys.argv[2]), str(sys.argv[3]).encode('utf-8'))
 
 if __name__ == '__main__':
     if (len(sys.argv) == 4):
