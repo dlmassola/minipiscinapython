@@ -1,0 +1,18 @@
+{% extends 'ex01/base.html' %} {% block title %}
+<title>Ex01: Display process of a static page.</title>
+{% endblock title %} {% block content %}
+<div class="content">
+  <p>Descreva o processo que causa a exibição de uma web estática página a partir de um template simples passando por uma view, desde a requisição até o responder.</p>
+  <ul>
+    <li>o processo começa com o usuário digitando o endereço da página no navegador</li>
+    <li>o navegador envia uma requisição para o servidor</li>
+    <li>o servidor recebe a requisição e envia para o Django</li>
+    <li>o Django recebe a requisição e verifica se existe uma url que corresponde a requisição, se existir ele envia para a view</li>
+    <li>a view processa a requisição e envia para o template</li>
+    <li>o template processa a requisição e envia para o navegador</li>
+    <li>o navegador recebe a resposta e exibe para o usuário</li>
+  </ul>
+  
+</div>
+
+{% endblock content %}

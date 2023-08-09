@@ -1,0 +1,14 @@
+# Como criar um formulário em Django usando a classe django.forms.Form
+# https://docs.djangoproject.com/pt-br/3.1/topics/forms/
+
+# Como configurar um arquiv de log no settings.py do Django
+# https://docs.djangoproject.com/pt-br/3.1/topics/logging/
+
+# Mostre como usar o formulário criado anteriormente
+# https://docs.djangoproject.com/pt-br/3.1/topics/forms/#the-view
+
+# Onde configurar a URL da aplicação?
+# https://docs.djangoproject.com/pt-br/3.1/topics/http/urls/
+
+# Monte um teste para a view
+# https://docs.djangoproject.com/pt-br/3.1/topics/testing/overview/

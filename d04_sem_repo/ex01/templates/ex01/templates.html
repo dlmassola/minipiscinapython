@@ -1,0 +1,72 @@
+{% extends 'ex01/base.html' %} {% load static %} {% block title %}
+<title>Ex01: Template engine.</title>
+{% endblock title %} {% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'style2.css' %}" />
+{% endblock style %} {% block content %}
+
+<div class="content">
+  {% verbatim %}
+  <h1>block Template Tag <br> Definition and Usage</h1>
+  <p>The block tag  has two functions:</p>
+  <ol>
+    <li>It is a placeholder for content.</li>
+    <li>It is content that will replace the placeholder.</li>
+  </ol>
+  In master templates the block tag is a placeholder that will be replaced by a block in a child template with the same name.<br>
+  In child templates the block tag is content that will replace the placeholder in the master template with the same name.<br>
+  In the example above you see the content of a master template, it has a block called userinfo.<br>
+  This block will be replaced with a block called userinfo in a child template:
+  <h2>Example</h2>
+  <p>This is a child template that refers to a master template via the extend tag:</p>
+  {% extends "mymaster.html" %}<br>
+  {% block userinfo %}
+    <h2>John Doe</h2>
+    <p>Explorer of life.</p>
+  {% endblock %}
+  <br><br><br>
+  <h1>for loop Template Tags</h1>
+  <p>A Django template is a text document or a Python string marked-up using the Django template language.<br>
+    Django being a powerful Batteries included framework provides convenience to rendering data in a template.<br>
+    Django templates not only allow passing data from view to template, but also provides some limited features of a programming such as variables, for loops, comments, extends etc.<br>
+    This article revolves about how to use for tag in Templates. for tag loops over each item in an array, making the item available in a context variable.</p>
+  Syntax<br>
+  {% for i in list %}<br>
+  {% endfor %}<br>
+  <br>
+  <br>
+  < ul ><br>
+    {% for athlete in athlete_list %}<br>
+        < li >{{ athlete.name }}< /li ><br>
+    {% endfor %}<br>
+  < /ul > 
+  <br><br><br>
+  <h1>if loop Template Tags</h1>
+  <p>A Django template is a text document or a Python string marked-up using the Django template language. Django being a powerful Batteries included framework provides convenience to rendering data in a template. Django templates not only allow passing data from view to template, but also provides some limited features of a programming such as variables, for loops, comments, extends, if else etc. 
+    This article revolves about how to use if tag in Templates. The {% if %} tag evaluates a variable, and if that variable is “true” (i.e. exists, is not empty, and is not a false boolean value) the contents of the block are output.</p>
+  Syntax<br>
+  {% if variable %}<br>
+  // statements<br>
+  {% else %}<br>
+  // statements<br>
+  {% endif %}<br>
+  <br>
+  Example:<br>
+  {% if athlete_list %}<br>
+  Number of athletes: {{ athlete_list|length }}<br>
+  {% elif athlete_in_locker_room_list %}<br>
+  Athletes should be out of the locker room soon!<br>
+  {% else %}<br>
+  No athletes.<br>
+  {% endif %}<br>
+   
+  <br><br><br>
+  <h1>The display of the passing context variables</h1>
+  Syntax<br>
+  <ul>
+    <li>{% variableName %}</li>
+  </ul>
+  <br>
+  {% endverbatim %}
+</div>
+
+{% endblock content %}

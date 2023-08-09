@@ -1,0 +1,34 @@
+# GitHub Copilot, como eu crio uma página chamada index.html em uma aplicação Django?
+Eu estou usando o GitHub Copilot, e ele me sugeriu o seguinte código:
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+```
+# Faça um exemplo de arquivo view.py em uma aplicação Django
+``` python
+from django.shortcuts import render
+
+# Como criar um página HTML responsiva
+def index(request):
+    return render(request, 'index.html')
+```
+# Crie um exemplo de folha de estilo CSS para uso em páginas HTML
+``` css
+body {
+    background-color: #000;
+    color: #fff;
+}
+```
+# O que é MarkDown?
+Markdown é uma linguagem de marcação que pode ser convertida em HTML. É muito usada em documentações de projetos de software, como o GitHub, por exemplo.
+
+
+```
