@@ -1,14 +1,15 @@
-# Como criar um formulário em Django usando a classe django.forms.Form
-# https://docs.djangoproject.com/pt-br/3.1/topics/forms/
+#Descreva a história do framework Django e porque ele é tão utilizado atualmente.
+#Django é um framework web de alto nível escrito em Python que estimula o desenvolvimento rápido e limpo.
 
-# Como configurar um arquiv de log no settings.py do Django
-# https://docs.djangoproject.com/pt-br/3.1/topics/logging/
+#Por que o Django foi desenvolvido?
+#O Django foi desenvolvido para atender as necessidades de um jornal online, o Lawrence Journal-World, que precisava de um sistema para gerenciar seu conteúdo.
 
-# Mostre como usar o formulário criado anteriormente
-# https://docs.djangoproject.com/pt-br/3.1/topics/forms/#the-view
+#Como usar templates em Django?
+#Para usar templates em Django, é necessário criar uma pasta chamada templates dentro da pasta do projeto, e dentro dela criar um arquivo html com o nome do template.
 
-# Onde configurar a URL da aplicação?
-# https://docs.djangoproject.com/pt-br/3.1/topics/http/urls/
+#Descreva o processo que causa a exibição de uma web estática pelo Django.
+#O processo que causa a exibição de uma web estática pelo Django é o seguinte: o usuário faz uma requisição, o Django recebe essa requisição e a envia para o servidor, o servidor processa a requisição e envia uma resposta para o Django, o Django recebe a resposta e a envia para o usuário.
 
-# Monte um teste para a view
-# https://docs.djangoproject.com/pt-br/3.1/topics/testing/overview/
+#O que é uma view?
+#Uma view é uma função que recebe uma requisição e retorna uma resposta.
+
